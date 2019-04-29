@@ -6,7 +6,7 @@ public class Manipulae : MonoBehaviour
 {
     private const int TAM = 5;
     private const int TEMPO = 300;
-    private const float ROT = 0.15F, COR = 0.03F;
+    private const float ROT = 0.8F, COR = 0.03F;
     private float x, y, z;
     public Color color = Color.black;
     private int cont = 0;
@@ -24,6 +24,7 @@ public class Manipulae : MonoBehaviour
     {
         iniciaCor();
         gameObject.GetComponent<Renderer>().material.color = new Color(color.r, color.g, color.b, color.a);
+        transform.Rotate(Vector3.forward, 45);
     }
 
     // Update is called once per frame
@@ -32,9 +33,10 @@ public class Manipulae : MonoBehaviour
 
         if (cont > TEMPO)
         {
-            transform.Rotate(Vector3.up, ROT*7);
+/*             transform.Rotate(Vector3.up, ROT*7);
             transform.Rotate(Vector3.left, ROT*4);
-            transform.Rotate(Vector3.forward, ROT*4);
+            transform.Rotate(Vector3.forward, ROT*4);*/
+            transform.Rotate(ROT, ROT, ROT, Space.Self);
             if (transform.localScale.x < TAM)
             {
                 x += 0.05f * Time.deltaTime;
