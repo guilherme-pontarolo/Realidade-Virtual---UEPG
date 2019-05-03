@@ -26,7 +26,7 @@ public class GazeInteracao : MonoBehaviour
         if (gazedAt)
         {
             timer += Time.deltaTime;
-            imgCirculo.fillAmount = timer / gazeTime;
+             imgCirculo.fillAmount = timer / gazeTime;
 
             if (timer > gazeTime)
             {

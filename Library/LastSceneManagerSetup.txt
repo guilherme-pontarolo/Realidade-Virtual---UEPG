@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/VR UEPG/VR UEPG.unity
+- path: Assets/VR UEPG/Scenes/VR Figuras Geometricas.unity
   isLoaded: 1
   isActive: 1
