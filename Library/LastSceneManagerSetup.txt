@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/cubo.unity
+- path: Assets/VR UEPG/VR UEPG.unity
   isLoaded: 1
   isActive: 1
