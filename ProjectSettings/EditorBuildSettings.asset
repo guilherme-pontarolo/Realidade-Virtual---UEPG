@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/VR Figuras Geometricas.unity
+    path: Assets/VR UEPG/Scenes/VR Figuras Geometricas.unity
     guid: 9eef140d5115c2548b97d37c780451eb
