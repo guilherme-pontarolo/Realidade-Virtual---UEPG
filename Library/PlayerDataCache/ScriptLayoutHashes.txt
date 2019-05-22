@@ -1,11 +1,12 @@
 Android
 PlayerPath?
-C:/Users/rully/OneDrive/VRmenu.apk
+D:/Rullyan/Área de Trabalho/testeVR.apk
 SceneListBegin?
 Assets/VR UEPG/Scenes/VR Figuras Geometricas.unity
 SceneListEnd?
 176f67aae4ec7273cfef37fd8876bd9a Assembly-CSharp.dll:.GvrDropdown
 c9737d14ba7a2fc69347a243e2d68150 Assembly-CSharp.dll:GoogleVR.GVRDemo.HeadsetDemoManager
+dc7c79d279c7db671b5343c1c88ec717 Assembly-CSharp.dll:.Rotacionar
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset

@@ -26,13 +26,14 @@ public class GazeInteracao : MonoBehaviour
         if (gazedAt)
         {
             timer += Time.deltaTime;
-             imgCirculo.fillAmount = timer / gazeTime;
+            imgCirculo.fillAmount = timer / gazeTime;
 
             if (timer > gazeTime)
             {
                 // executa o manipulador de ponteiro
                 ExecuteEvents.Execute(gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerDownHandler);
                 timer = 0;
+                imgCirculo.fillAmount = 0;
             }
         }
 
