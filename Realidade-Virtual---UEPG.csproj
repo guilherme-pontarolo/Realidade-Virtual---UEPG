@@ -343,7 +343,6 @@
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\VR UEPG\Scripts\AparecerFigura.cs" />
     <Compile Include="Assets\VR UEPG\Scripts\GazeInteracao.cs" />
-    <Compile Include="Assets\VR UEPG\Scripts\Manipulae.cs" />
     <Compile Include="Assets\VR UEPG\Scripts\Menu.cs" />
     <Compile Include="Assets\VR UEPG\Scripts\Rotacionar.cs" />
   </ItemGroup>

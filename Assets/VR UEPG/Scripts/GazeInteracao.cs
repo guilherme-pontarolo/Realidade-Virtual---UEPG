@@ -28,12 +28,10 @@ public class GazeInteracao : MonoBehaviour
             timer += Time.deltaTime;
             imgCirculo.fillAmount = timer / gazeTime;
 
-            if (timer > gazeTime)
+            if (timer >= gazeTime)
             {
                 // executa o manipulador de ponteiro
                 ExecuteEvents.Execute(gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerDownHandler);
-                timer = 0;
-                imgCirculo.fillAmount = 0;
             }
         }
 
@@ -48,10 +46,10 @@ public class GazeInteracao : MonoBehaviour
     public void PointerExit()
     {
         timer = 0;
-        gazedAt = false;
         imgCirculo.fillAmount = 0;
+        gazedAt = false;
         Debug.Log("PointerExit");
-        
+
     }
 
     public void PointerDown()

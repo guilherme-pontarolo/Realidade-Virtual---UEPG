@@ -19,12 +19,17 @@ public class Menu : MonoBehaviour {
 
     public void DesabilitaMenu()
     {
-        MenuObjeto.SetActive(false);
+        MenuObjeto.transform.position = new Vector3(0,0,-1000);
     }
 
     public void ApareceBotoes()
     {
-        MenuObjeto.SetActive(true);
+        MenuObjeto.transform.position = new Vector3(5, 0, 5);
+    }
+
+    public void ApareceVoltar()
+    {
+        MenuObjeto.transform.position = new Vector3(-1, 5, 8);
     }
 
     public void ExitGame()

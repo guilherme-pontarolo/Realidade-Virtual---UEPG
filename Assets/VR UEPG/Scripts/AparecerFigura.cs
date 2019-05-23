@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AparecerFigura : MonoBehaviour{
 
-    public GameObject FiguraObject;
-    private bool Visibilidade;
+    public GameObject FiguraObjeto;
 
     // Use this for initialization
     void Start()
@@ -20,22 +19,13 @@ public class AparecerFigura : MonoBehaviour{
     }
 
     // Mostra ou esconde o objeto
-    public void ApareceOuDesapareceFigura()
+    public void ApareceFigura()
     {
-        if (!Visibilidade)
-        {
-            FiguraObject.SetActive(true);
-            Visibilidade = true;
-        }
-        else
-        {
-            FiguraObject.SetActive(false);
-            Visibilidade = false;
-        }
+        FiguraObjeto.transform.position = new Vector3(-2, 1, 7);
     }
 
-    public void DesabilitarOutros()
+    public void DesapareceFigura()
     {
-    FiguraObject.SetActive(false);
+        FiguraObjeto.transform.position = new Vector3(0, 0, -1000);
     }
 }
