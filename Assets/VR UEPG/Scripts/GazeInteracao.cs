@@ -9,7 +9,7 @@ public class GazeInteracao : MonoBehaviour
 {
 
     public Image imgCirculo;
-    public float gazeTime = 2;
+    private float gazeTime = 2;
     private float timer;
     bool gazedAt;
 

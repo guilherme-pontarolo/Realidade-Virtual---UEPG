@@ -6,7 +6,7 @@ public class Menu : MonoBehaviour {
 
     public GameObject MenuObjeto;
     private bool Visibilidade;
-
+	public float x, y, z;
     // Use this for initialization
     void Start () {
 		
@@ -19,7 +19,12 @@ public class Menu : MonoBehaviour {
 
     public void DesabilitaMenu()
     {
-        MenuObjeto.transform.position = new Vector3(0,0,-1000);
+        MenuObjeto.transform.position = new Vector3(0,0,-2000);
+    }
+
+    public void AbilitaMenu()
+    {
+        MenuObjeto.transform.position = new Vector3(0 , 1, 5);
     }
 
     public void ApareceBotoes()
@@ -29,8 +34,13 @@ public class Menu : MonoBehaviour {
 
     public void ApareceVoltar()
     {
-        MenuObjeto.transform.position = new Vector3(-1, 5, 8);
+        MenuObjeto.transform.position = new Vector3(0, 4, 8);
     }
+
+	public void ApareceMontarDesmontar()
+	{
+		MenuObjeto.transform.position = new Vector3(x, y, z);
+	}
 
     public void ExitGame()
     {
